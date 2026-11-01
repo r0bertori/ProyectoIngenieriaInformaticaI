@@ -1,0 +1,297 @@
+/* ===========================================================
+   El Bar de Moe · ZONEXIS · Steam City
+   Hoja de estilos única. Cargar desde el código:
+       app.setStyleSheet(open("styles.qss", encoding="utf-8").read())
+   Paleta: cobalto #4e78b9 · ámbar #dca135 · fondos #0B1426 / #131F38 / #24365B
+           texto #E8EDF5 / #8D9BB8 · verde #3FB68B · rojo #E5574F
+   =========================================================== */
+
+/* ---------- Base ---------- */
+QWidget {
+    background-color: #0B1426;
+    color: #E8EDF5;
+    font-family: "Segoe UI";
+    font-size: 14px;
+}
+QLabel {
+    background: transparent;
+}
+QToolTip {
+    background-color: #131F38;
+    color: #E8EDF5;
+    border: 1px solid #24365B;
+}
+
+/* ---------- Cabecera, tarjetas y paneles ---------- */
+#cardAforo,
+#cardAlcohol,
+#cardAlertasActivas,
+#cardCo2,
+#cardConsumo,
+#cardHumo,
+#cardMaquinas,
+#cardRuido,
+#cardTempHum,
+#cardTerraza,
+#frameCabecera,
+#panelAuditoria,
+#panelAviso,
+#panelFiltro {
+    background-color: #131F38;
+    border: 1px solid #24365B;
+    border-radius: 12px;
+}
+#lblLogo {
+    color: #4e78b9;
+    font-size: 24px;
+    font-weight: 800;
+}
+#lblTituloPantalla {
+    font-size: 20px;
+    font-weight: 600;
+}
+#lblNombreUsuario {
+    font-weight: 600;
+}
+#lblRolUsuario {
+    color: #8D9BB8;
+    font-size: 12px;
+}
+
+/* ---------- Títulos y textos ---------- */
+#lblAforoTitulo,
+#lblAlcoholTitulo,
+#lblAlertasActivasTitulo,
+#lblCo2Titulo,
+#lblConsumoTitulo,
+#lblHumoTitulo,
+#lblMaquinasTitulo,
+#lblRuidoTitulo,
+#lblTempHumTitulo,
+#lblTerrazaTitulo {
+    color: #dca135;
+    font-size: 13px;
+    font-weight: 600;
+}
+#lblAlertasTitulo,
+#lblContenedoresTitulo,
+#lblUsuariosTitulo,
+#lblAuditoriaTitulo,
+#lblAvisoTitulo {
+    color: #E8EDF5;
+    font-size: 16px;
+    font-weight: 600;
+}
+#lblDestinoEtiqueta,
+#lblLoginPasswordEtiqueta,
+#lblLoginUsuarioEtiqueta,
+#lblNivelEtiqueta,
+#lblRegDniEtiqueta,
+#lblRegNombreEtiqueta,
+#lblRegPasswordEtiqueta,
+#lblRegRolEtiqueta,
+#lblRegTelefonoEtiqueta,
+#lblSensorEtiqueta {
+    color: #8D9BB8;
+    font-size: 13px;
+}
+#lblCo2Umbral,
+#lblUltimoAviso {
+    color: #8D9BB8;
+    font-size: 12px;
+}
+#lblErrorLogin {
+    color: #E5574F;
+}
+
+/* ---------- Valores de las tarjetas (ámbar = destacado) ---------- */
+#lblAforoValor,
+#lblAlcoholValor,
+#lblAlertasActivasValor,
+#lblCo2Valor,
+#lblConsumoValor,
+#lblHumoValor,
+#lblMaquinasValor,
+#lblRuidoValor,
+#lblTempHumValor,
+#lblTerrazaValor {
+    color: #dca135;
+    font-weight: 700;
+}
+#lblAforoValor,
+#lblAlertasActivasValor,
+#lblCo2Valor,
+#lblConsumoValor,
+#lblRuidoValor,
+#lblTerrazaValor {
+    font-size: 26px;
+}
+#lblAlcoholValor,
+#lblHumoValor,
+#lblMaquinasValor,
+#lblTempHumValor {
+    font-size: 20px;
+}
+/* estados: verde = correcto, rojo = alerta */
+#lblHumoValor {
+    color: #3FB68B;
+}
+#lblAlertasActivasValor {
+    color: #E5574F;
+}
+
+/* ---------- Botones (cobalto) ---------- */
+QPushButton {
+    background-color: #4e78b9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 600;
+    min-height: 20px;
+}
+QPushButton:hover {
+    background-color: #6088c6;
+}
+QPushButton:pressed {
+    background-color: #3f64a0;
+}
+QPushButton:disabled {
+    background-color: #24365B;
+    color: #8D9BB8;
+}
+
+/* ---------- Campos de entrada ---------- */
+QLineEdit, QComboBox, QTextEdit {
+    background-color: #0B1426;
+    color: #E8EDF5;
+    border: 1px solid #24365B;
+    border-radius: 8px;
+    padding: 7px 10px;
+    selection-background-color: #4e78b9;
+    selection-color: #FFFFFF;
+}
+QLineEdit:focus, QComboBox:focus, QTextEdit:focus {
+    border: 1px solid #4e78b9;
+}
+QComboBox QAbstractItemView {
+    background-color: #131F38;
+    color: #E8EDF5;
+    border: 1px solid #24365B;
+    selection-background-color: #4e78b9;
+    selection-color: #FFFFFF;
+    outline: none;
+}
+
+/* ---------- Pestañas ---------- */
+QTabWidget::pane {
+    border: 1px solid #24365B;
+    border-radius: 10px;
+    background-color: #0B1426;
+    top: -1px;
+}
+QTabBar {
+    background: transparent;
+}
+QTabBar::tab {
+    background-color: #131F38;
+    color: #8D9BB8;
+    border: 1px solid #24365B;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 9px 24px;
+    min-width: 110px;
+    margin-right: 4px;
+}
+QTabBar::tab:selected {
+    background-color: #4e78b9;
+    border-color: #4e78b9;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+QTabBar::tab:hover:!selected {
+    color: #E8EDF5;
+}
+#tabLogin::tab-bar {
+    alignment: center;
+}
+
+/* ---------- Barras de progreso (cobalto) ---------- */
+QProgressBar {
+    background-color: #0B1426;
+    border: 1px solid #24365B;
+    border-radius: 6px;
+    min-height: 12px;
+    max-height: 12px;
+}
+QProgressBar::chunk {
+    background-color: #4e78b9;
+    border-radius: 5px;
+}
+
+/* ---------- Tablas ---------- */
+QTableWidget {
+    background-color: #131F38;
+    alternate-background-color: #172542;
+    color: #E8EDF5;
+    border: 1px solid #24365B;
+    border-radius: 10px;
+    gridline-color: #24365B;
+    outline: none;
+}
+QTableWidget::item {
+    padding: 4px 10px;
+    border: none;
+}
+QTableWidget::item:selected {
+    background-color: #4e78b9;
+    color: #FFFFFF;
+}
+QHeaderView {
+    background: transparent;
+}
+QHeaderView::section {
+    background-color: #0B1426;
+    color: #8D9BB8;
+    font-weight: 600;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #24365B;
+    text-align: left;
+}
+QTableCornerButton::section {
+    background-color: #0B1426;
+    border: none;
+}
+
+/* ---------- Barras de desplazamiento ---------- */
+QScrollBar:vertical {
+    background: #0B1426;
+    width: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+QScrollBar:horizontal {
+    background: #0B1426;
+    height: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+QScrollBar::handle:vertical {
+    background: #24365B;
+    border-radius: 5px;
+    min-height: 24px;
+}
+QScrollBar::handle:horizontal {
+    background: #24365B;
+    border-radius: 5px;
+    min-width: 24px;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    width: 0;
+    height: 0;
+}
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: transparent;
+}

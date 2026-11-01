@@ -1,16 +1,14 @@
-# This is a sample Python script.
+import sys
+from PyQt6 import QtWidgets, uic
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Uso: python main.py [login|gerente|analista|admin|emergencias]
+pantalla = sys.argv[1] if len(sys.argv) > 1 else "login"
 
+app = QtWidgets.QApplication(sys.argv)
+with open(f"src/views/styles.qss", encoding="utf-8") as f:
+    app.setStyleSheet(f.read())
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+ventana = QtWidgets.QWidget()
+uic.loadUi(f"src/views/{pantalla}.ui", ventana)
+ventana.show()
+sys.exit(app.exec())
