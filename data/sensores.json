@@ -1,0 +1,115 @@
+{
+  "sensores": [
+    {
+      "id": "S01",
+      "nombre": "Aforo",
+      "hardware_propuesto": "2 × sensor IR (entrada y salida)",
+      "magnitud": "Personas en el local",
+      "unidad": "personas",
+      "tipo": "numerico",
+      "umbral_alerta": 60
+    },
+    {
+      "id": "S02",
+      "nombre": "Humo",
+      "hardware_propuesto": "MQ-2",
+      "magnitud": "Presencia de humo",
+      "unidad": "",
+      "tipo": "binario",
+      "umbral_alerta": null,
+      "etiquetas": {
+        "0": "Sin detección",
+        "1": "Humo detectado"
+      }
+    },
+    {
+      "id": "S03",
+      "nombre": "CO2 / calidad del aire",
+      "hardware_propuesto": "MQ-135 o MH-Z19",
+      "magnitud": "CO2",
+      "unidad": "ppm",
+      "tipo": "numerico",
+      "umbral_alerta": 800
+    },
+    {
+      "id": "S04",
+      "nombre": "Ruido",
+      "hardware_propuesto": "KY-038 o MAX4466",
+      "magnitud": "Nivel sonoro",
+      "unidad": "dB",
+      "tipo": "numerico",
+      "umbral_alerta": null
+    },
+    {
+      "id": "S05",
+      "nombre": "Estado de la terraza",
+      "hardware_propuesto": "Interruptor o reed",
+      "magnitud": "Abierta o cerrada",
+      "unidad": "",
+      "tipo": "binario",
+      "umbral_alerta": null,
+      "etiquetas": {
+        "0": "Cerrada",
+        "1": "Abierta"
+      }
+    },
+    {
+      "id": "S06",
+      "nombre": "Nivel de contenedor",
+      "hardware_propuesto": "HC-SR04",
+      "magnitud": "Porcentaje de llenado",
+      "unidad": "%",
+      "tipo": "numerico",
+      "umbral_alerta": null
+    },
+    {
+      "id": "S07",
+      "nombre": "Consumo eléctrico",
+      "hardware_propuesto": "INA219",
+      "magnitud": "Potencia",
+      "unidad": "kW",
+      "tipo": "numerico",
+      "umbral_alerta": null
+    },
+    {
+      "id": "S08",
+      "nombre": "Venta de alcohol",
+      "hardware_propuesto": "Pulsador o caudalímetro",
+      "magnitud": "Consumiciones dispensadas",
+      "unidad": "uds",
+      "tipo": "numerico",
+      "umbral_alerta": null
+    },
+    {
+      "id": "S09",
+      "nombre": "Máquina de tabaco y tragaperras",
+      "hardware_propuesto": "Reed (puerta) y sensor de vibración",
+      "magnitud": "Nivel de recaudación",
+      "unidad": "%",
+      "tipo": "numerico",
+      "umbral_alerta": null
+    },
+    {
+      "id": "S10",
+      "nombre": "Temperatura y humedad",
+      "hardware_propuesto": "DHT22",
+      "magnitud": "Temperatura (valor) y humedad relativa (humedad)",
+      "unidad": "°C",
+      "tipo": "numerico",
+      "umbral_alerta": null
+    },
+    {
+      "id": "S11",
+      "nombre": "Botón de emergencia",
+      "hardware_propuesto": "Pulsador SOS",
+      "magnitud": "Aviso de emergencia",
+      "unidad": "",
+      "tipo": "binario",
+      "umbral_alerta": null,
+      "etiquetas": {
+        "0": "Sin aviso",
+        "1": "Aviso enviado"
+      }
+    }
+  ]
+}

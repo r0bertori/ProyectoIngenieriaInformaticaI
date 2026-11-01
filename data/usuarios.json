@@ -1,0 +1,112 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "dni": "24942603T",
+      "nombre": "Alba",
+      "apellidos": "Moreno Ruiz",
+      "telefono": "643321819",
+      "rol": "administrador",
+      "organizacion": "Zonexis Global",
+      "salt": "6c031199",
+      "password_hash": "ee2bd9ad75f6e07c3f2bce415916413b202c7cc0d77bcd51be1cccc615a85b7e",
+      "activo": true
+    },
+    {
+      "id": 2,
+      "dni": "14265799A",
+      "nombre": "Hugo",
+      "apellidos": "Serrano Vidal",
+      "telefono": "613389083",
+      "rol": "administrador",
+      "organizacion": "Zonexis Global",
+      "salt": "b74d0fb1",
+      "password_hash": "6be067937565ccb54abca0db9c2c7af170bd4c08e9ffaaebf651da26b5106b71",
+      "activo": true
+    },
+    {
+      "id": 3,
+      "dni": "66306997K",
+      "nombre": "Irene",
+      "apellidos": "Cabrera Soto",
+      "telefono": "679402654",
+      "rol": "administrador",
+      "organizacion": "Zonexis Global",
+      "salt": "27cd8130",
+      "password_hash": "6a1c5be09e92ce5e4e36748b945f3e03ec8c329fbbcb7f5516f8097227d5ca6a",
+      "activo": true
+    },
+    {
+      "id": 4,
+      "dni": "38898923N",
+      "nombre": "Marcos",
+      "apellidos": "Ibáñez Prieto",
+      "telefono": "711615594",
+      "rol": "emergencias",
+      "organizacion": "Comisaría",
+      "salt": "ce9ff57f",
+      "password_hash": "f66f61279ffe315700a7cc3381860b811066850e7ffca6b5a4723eefb8b4027f",
+      "activo": true
+    },
+    {
+      "id": 5,
+      "dni": "15831819E",
+      "nombre": "Lucía",
+      "apellidos": "Herrero Gil",
+      "telefono": "781618495",
+      "rol": "emergencias",
+      "organizacion": "Comisaría",
+      "salt": "93cd59bf",
+      "password_hash": "460ee604330d94d614a91279c53fb9dfccf74ec821f57e8498295a681ec2a02e",
+      "activo": true
+    },
+    {
+      "id": 6,
+      "dni": "35808537K",
+      "nombre": "Samuel",
+      "apellidos": "Ortega Lara",
+      "telefono": "603413164",
+      "rol": "emergencias",
+      "organizacion": "Comisaría",
+      "salt": "7412b293",
+      "password_hash": "73968927607013ceb817d1e0e0915ae106c9361608f59dbd915db71f66db16ba",
+      "activo": true
+    },
+    {
+      "id": 7,
+      "dni": "58966946Y",
+      "nombre": "Paula",
+      "apellidos": "Navarro Diez",
+      "telefono": "655341928",
+      "rol": "emergencias",
+      "organizacion": "Hospital",
+      "salt": "baa80dd4",
+      "password_hash": "bb7d4c6b425da1c29f15f72aba0b5cecc709554a2ecd095af2e009f4e705f594",
+      "activo": true
+    },
+    {
+      "id": 8,
+      "dni": "42857966L",
+      "nombre": "Daniel",
+      "apellidos": "Crespo Molina",
+      "telefono": "676483503",
+      "rol": "emergencias",
+      "organizacion": "Hospital",
+      "salt": "d261a7ab",
+      "password_hash": "f75e872152c567b89a76d774c1244754e587f091f4332ce7c71ad814449d559e",
+      "activo": true
+    },
+    {
+      "id": 9,
+      "dni": "14308421Y",
+      "nombre": "Elena",
+      "apellidos": "Barrios Vega",
+      "telefono": "764139537",
+      "rol": "emergencias",
+      "organizacion": "Hospital",
+      "salt": "654821d0",
+      "password_hash": "64dc6f37e28a037d5636765c3ffe25f04ba89b20883bab3801491c2df267a93f",
+      "activo": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "roles": [
+    {
+      "id": "administrador",
+      "nombre": "Administrador del Sistema",
+      "vista": "admin.ui",
+      "permisos": [
+        "gestionar_usuarios",
+        "asignar_roles",
+        "auditar_json"
+      ]
+    },
+    {
+      "id": "gerente",
+      "nombre": "Gerente del Bar (Supervisor)",
+      "vista": "gerente.ui",
+      "permisos": [
+        "ver_sensores",
+        "ver_historial",
+        "ver_alertas"
+      ]
+    },
+    {
+      "id": "analista",
+      "nombre": "Analista Municipal (Ayuntamiento)",
+      "vista": "analista.ui",
+      "permisos": [
+        "ver_aforo",
+        "ver_terraza",
+        "ver_contenedores",
+        "enviar_restriccion_energetica"
+      ]
+    },
+    {
+      "id": "emergencias",
+      "nombre": "Usuario Clínico/Policial (Comisaría y Hospital)",
+      "vista": "emergencias.ui",
+      "permisos": [
+        "ver_avisos",
+        "atender_avisos"
+      ]
+    }
+  ]
+}

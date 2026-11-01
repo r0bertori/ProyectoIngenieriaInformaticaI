@@ -1,0 +1,10 @@
+{
+  "establecimiento": "El Bar de Moe",
+  "id_nodo": "ZNX-STM-042",
+  "parametros_activos": {
+    "aforo_maximo": 60,
+    "umbral_co2_ppm": 800,
+    "modo_eficiencia": true,
+    "modo_simulacion": true
+  }
+}
