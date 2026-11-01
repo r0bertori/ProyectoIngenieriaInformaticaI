@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>El Bar de Moe - Login y Registro</string>
+  </property>
+  <layout class="QVBoxLayout" name="layoutPrincipal">
+   <property name="spacing">
+    <number>14</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item alignment="Qt::AlignHCenter">
+    <widget class="QLabel" name="lblLogo">
+     <property name="minimumSize">
+      <size>
+       <width>97</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>97</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="pixmap">
+      <pixmap>assets/logo.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignCenter">
+    <widget class="QTabWidget" name="tabLogin">
+     <widget class="QWidget" name="pagIniciarSesion">
+      <layout class="QVBoxLayout" name="layoutIniciarSesion">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <property name="leftMargin">
+        <number>32</number>
+       </property>
+       <property name="topMargin">
+        <number>28</number>
+       </property>
+       <property name="rightMargin">
+        <number>32</number>
+       </property>
+       <property name="bottomMargin">
+        <number>28</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lblLoginUsuarioEtiqueta">
+         <property name="text">
+          <string>DNI / usuario</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtLoginUsuario">
+         <property name="placeholderText">
+          <string>Introduce tu DNI o usuario</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblLoginPasswordEtiqueta">
+         <property name="text">
+          <string>Contraseña</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtLoginPassword">
+         <property name="placeholderText">
+          <string>Introduce tu contraseña</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnEntrar">
+         <property name="text">
+          <string>Entrar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblErrorLogin">
+         <property name="text">
+          <string>DNI o contraseña incorrectos.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+      <attribute name="title">
+       <string>Iniciar sesión</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="pagRegistro">
+      <layout class="QVBoxLayout" name="layoutRegistro">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <property name="leftMargin">
+        <number>32</number>
+       </property>
+       <property name="topMargin">
+        <number>24</number>
+       </property>
+       <property name="rightMargin">
+        <number>32</number>
+       </property>
+       <property name="bottomMargin">
+        <number>24</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lblRegNombreEtiqueta">
+         <property name="text">
+          <string>Nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtRegNombre">
+         <property name="placeholderText">
+          <string>Nombre y apellidos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblRegDniEtiqueta">
+         <property name="text">
+          <string>DNI</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtRegDni">
+         <property name="placeholderText">
+          <string>12345678Z</string>
+         </property>
+         <property name="maxLength">
+          <number>9</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblRegTelefonoEtiqueta">
+         <property name="text">
+          <string>Teléfono</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtRegTelefono">
+         <property name="placeholderText">
+          <string>9 dígitos</string>
+         </property>
+         <property name="maxLength">
+          <number>9</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblRegPasswordEtiqueta">
+         <property name="text">
+          <string>Contraseña</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="txtRegPassword">
+         <property name="placeholderText">
+          <string>Elige una contraseña</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblRegRolEtiqueta">
+         <property name="text">
+          <string>Rol</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="cmbRegRol">
+         <item>
+          <property name="text">
+           <string>Gerente</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Analista municipal</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Emergencias</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnRegistrarse">
+         <property name="text">
+          <string>Registrarse</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+      <attribute name="title">
+       <string>Registro</string>
+      </attribute>
+     </widget>
+     <property name="minimumSize">
+      <size>
+       <width>460</width>
+       <height>0</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>
