@@ -1,2 +1,0 @@
-Rodrigo González Otero
-Sprint 2 Tarea: Diseño e interfaz grafica adaptativa en PyQt
