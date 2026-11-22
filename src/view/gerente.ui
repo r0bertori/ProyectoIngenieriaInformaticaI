@@ -1,0 +1,1046 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>Gerente</class>
+ <widget class="QWidget" name="Gerente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>El Bar de Moe - Vista Gerente del bar</string>
+  </property>
+  <layout class="QVBoxLayout" name="layoutPrincipal" stretch="0,1">
+   <property name="spacing">
+    <number>14</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frameCabecera">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>64</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="layoutCabecera" stretch="0,1,0,0">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblLogo">
+        <property name="minimumSize">
+         <size>
+          <width>43</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>43</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="pixmap">
+         <pixmap>assets/logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblTituloPantalla">
+        <property name="text">
+         <string>Vista Gerente del bar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layoutUsuario">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lblNombreUsuario">
+          <property name="text">
+           <string>Moisés Herrera</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblRolUsuario">
+          <property name="text">
+           <string>Gerente</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCerrarSesion">
+        <property name="text">
+         <string>Cerrar sesión</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="tabPrincipal">
+     <widget class="QWidget" name="pagTiempoReal">
+      <layout class="QVBoxLayout" name="layoutTiempoReal" stretch="0,0,1">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>12</number>
+       </property>
+       <property name="topMargin">
+        <number>12</number>
+       </property>
+       <property name="rightMargin">
+        <number>12</number>
+       </property>
+       <property name="bottomMargin">
+        <number>12</number>
+       </property>
+       <item>
+        <layout class="QGridLayout" name="layoutTarjetas" columnstretch="1,1,1,1,1,1">
+         <property name="spacing">
+          <number>12</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QFrame" name="cardAforo">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardAforo">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblAforoTitulo">
+              <property name="text">
+               <string>Aforo</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblAforoValor">
+              <property name="text">
+               <string>42 / 60</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QProgressBar" name="barAforo">
+              <property name="minimum">
+               <number>0</number>
+              </property>
+              <property name="maximum">
+               <number>60</number>
+              </property>
+              <property name="value">
+               <number>42</number>
+              </property>
+              <property name="textVisible">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QFrame" name="cardCo2">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardCo2">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblCo2Titulo">
+              <property name="text">
+               <string>CO2</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblCo2Valor">
+              <property name="text">
+               <string>650 ppm</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblCo2Umbral">
+              <property name="text">
+               <string>Umbral: 800 ppm</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QFrame" name="cardHumo">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardHumo">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblHumoTitulo">
+              <property name="text">
+               <string>Humo</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblHumoValor">
+              <property name="text">
+               <string>Sin detección</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QFrame" name="cardRuido">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardRuido">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblRuidoTitulo">
+              <property name="text">
+               <string>Ruido</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblRuidoValor">
+              <property name="text">
+               <string>72 dB</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QFrame" name="cardTempHum">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardTempHum">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblTempHumTitulo">
+              <property name="text">
+               <string>Temperatura y humedad</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblTempHumValor">
+              <property name="text">
+               <string>24,5 °C / 58 %</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QFrame" name="cardConsumo">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardConsumo">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblConsumoTitulo">
+              <property name="text">
+               <string>Consumo</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblConsumoValor">
+              <property name="text">
+               <string>1,8 kW</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QFrame" name="cardTerraza">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardTerraza">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblTerrazaTitulo">
+              <property name="text">
+               <string>Terraza</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblTerrazaValor">
+              <property name="text">
+               <string>Abierta</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="2" colspan="2">
+          <widget class="QFrame" name="cardAlcohol">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardAlcohol">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblAlcoholTitulo">
+              <property name="text">
+               <string>Venta de alcohol</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblAlcoholValor">
+              <property name="text">
+               <string>38 consumiciones hoy</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="4" colspan="2">
+          <widget class="QFrame" name="cardMaquinas">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>96</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="layoutCardMaquinas">
+            <property name="spacing">
+             <number>4</number>
+            </property>
+            <property name="leftMargin">
+             <number>16</number>
+            </property>
+            <property name="topMargin">
+             <number>12</number>
+            </property>
+            <property name="rightMargin">
+             <number>16</number>
+            </property>
+            <property name="bottomMargin">
+             <number>12</number>
+            </property>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblMaquinasTitulo">
+              <property name="text">
+               <string>Máquinas de tabaco y tragaperras</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignTop">
+             <widget class="QLabel" name="lblMaquinasValor">
+              <property name="text">
+               <string>Operativas, recaudación al 60 %</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QLabel" name="lblAlertasTitulo">
+         <property name="text">
+          <string>Alertas y eventos</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tblAlertas">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>240</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>36</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Hora</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Sensor</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Evento</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Estado</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <item row="0" column="0">
+          <property name="text">
+           <string>21:42</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>Ruido</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>Nivel superior a 85 dB</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>Activa</string>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>229</red>
+             <green>87</green>
+             <blue>79</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>21:15</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>CO2</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>Umbral superado (820 ppm)</string>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>Resuelta</string>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>63</red>
+             <green>182</green>
+             <blue>139</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>20:58</string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>Aforo</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>Aforo superado (63 / 60)</string>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>Resuelta</string>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>63</red>
+             <green>182</green>
+             <blue>139</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>20:30</string>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>Humo</string>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string>Humo detectado</string>
+          </property>
+         </item>
+         <item row="3" column="3">
+          <property name="text">
+           <string>Resuelta</string>
+          </property>
+          <property name="foreground">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>63</red>
+             <green>182</green>
+             <blue>139</blue>
+            </color>
+           </brush>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+      <attribute name="title">
+       <string>Tiempo real</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="pagHistorial">
+      <layout class="QVBoxLayout" name="layoutHistorial" stretch="0,1">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <property name="leftMargin">
+        <number>12</number>
+       </property>
+       <property name="topMargin">
+        <number>12</number>
+       </property>
+       <property name="rightMargin">
+        <number>12</number>
+       </property>
+       <property name="bottomMargin">
+        <number>12</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="layoutSelectorSensor" stretch="0,1">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="lblSensorEtiqueta">
+           <property name="text">
+            <string>Sensor:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cmbSensor">
+           <item>
+            <property name="text">
+             <string>Aforo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CO2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Humo</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Ruido</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Temperatura y humedad</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Consumo</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tblHistorial">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>320</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>36</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>Fecha</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Hora</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Valor</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <item row="0" column="0">
+          <property name="text">
+           <string>21/10/2026</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>21:00</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>42 personas</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>21/10/2026</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>14:00</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>18 personas</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>20/10/2026</string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>21:00</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>55 personas</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>19/10/2026</string>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>21:00</string>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string>47 personas</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+      <attribute name="title">
+       <string>Historial</string>
+      </attribute>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>
