@@ -1,0 +1,49 @@
+{
+  "simulado": true,
+  "sensores": [
+    {
+      "sensor_id": "S01",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S02",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S03",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S04",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S05",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S06",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S07",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S08",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S09",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S10",
+      "lecturas": []
+    },
+    {
+      "sensor_id": "S11",
+      "lecturas": []
+    }
+  ]
+}
