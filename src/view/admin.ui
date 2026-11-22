@@ -1,0 +1,539 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>Admin</class>
+ <widget class="QWidget" name="Admin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>El Bar de Moe - Vista Administrador del sistema</string>
+  </property>
+  <layout class="QVBoxLayout" name="layoutPrincipal" stretch="0,1">
+   <property name="spacing">
+    <number>14</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frameCabecera">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>64</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="layoutCabecera" stretch="0,1,0,0">
+      <property name="spacing">
+       <number>16</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>8</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>8</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lblLogo">
+        <property name="minimumSize">
+         <size>
+          <width>43</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>43</width>
+          <height>44</height>
+         </size>
+        </property>
+        <property name="pixmap">
+         <pixmap>assets/logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="lblTituloPantalla">
+        <property name="text">
+         <string>Vista Administrador del sistema</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="layoutUsuario">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lblNombreUsuario">
+          <property name="text">
+           <string>Laura Sánchez</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lblRolUsuario">
+          <property name="text">
+           <string>Administrador</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnCerrarSesion">
+        <property name="text">
+         <string>Cerrar sesión</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="layoutContenido" stretch="2,1">
+     <property name="spacing">
+      <number>14</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="layoutUsuarios" stretch="0,1,0">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="lblUsuariosTitulo">
+         <property name="text">
+          <string>Usuarios del sistema</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tblUsuarios">
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>200</number>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="verticalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="verticalHeaderDefaultSectionSize">
+          <number>36</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>DNI</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Nombre</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Teléfono</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Rol</string>
+          </property>
+          <property name="textAlignment">
+           <set>Qt::AlignLeading|Qt::AlignVCenter</set>
+          </property>
+         </column>
+         <row>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>3</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>4</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>5</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>6</string>
+          </property>
+         </row>
+         <item row="0" column="0">
+          <property name="text">
+           <string>12345678Z</string>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="text">
+           <string>Laura Sánchez Ortega</string>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string>612345678</string>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>Administrador</string>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string>23456789D</string>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="text">
+           <string>Moisés Herrera Gil</string>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string>623456789</string>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>Gerente</string>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string>34567890V</string>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="text">
+           <string>Carlos Ruiz Medina</string>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string>634567890</string>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>Analista municipal</string>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string>45678901G</string>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="text">
+           <string>Elena Navarro Díaz</string>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string>645678901</string>
+          </property>
+         </item>
+         <item row="3" column="3">
+          <property name="text">
+           <string>Emergencias</string>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string>56789012B</string>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="text">
+           <string>Pablo Vega Romero</string>
+          </property>
+         </item>
+         <item row="4" column="2">
+          <property name="text">
+           <string>656789012</string>
+          </property>
+         </item>
+         <item row="4" column="3">
+          <property name="text">
+           <string>Gerente</string>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string>67890123B</string>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="text">
+           <string>Marta Iglesias León</string>
+          </property>
+         </item>
+         <item row="5" column="2">
+          <property name="text">
+           <string>667890123</string>
+          </property>
+         </item>
+         <item row="5" column="3">
+          <property name="text">
+           <string>Emergencias</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="layoutBotones" stretch="0,0,1,0">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="btnAltaUsuario">
+           <property name="text">
+            <string>Alta de usuario</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnBajaUsuario">
+           <property name="text">
+            <string>Baja de usuario</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="cmbRol">
+           <item>
+            <property name="text">
+             <string>Administrador</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Gerente</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Analista municipal</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Emergencias</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnCambiarRol">
+           <property name="text">
+            <string>Cambiar rol</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="panelAuditoria">
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <layout class="QVBoxLayout" name="layoutPanelAuditoria" stretch="0,1">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <property name="leftMargin">
+         <number>16</number>
+        </property>
+        <property name="topMargin">
+         <number>14</number>
+        </property>
+        <property name="rightMargin">
+         <number>16</number>
+        </property>
+        <property name="bottomMargin">
+         <number>16</number>
+        </property>
+        <item>
+         <layout class="QHBoxLayout" name="layoutAuditoriaTop" stretch="1,0">
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lblAuditoriaTitulo">
+            <property name="text">
+             <string>Auditoría de ficheros JSON</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnActualizar">
+            <property name="text">
+             <string>Actualizar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="txtAuditoria">
+          <property name="plainText">
+           <string>[21/10/2026 09:12] usuarios.json · ALTA · 67890123B (Emergencias) · por 12345678Z
+[20/10/2026 18:40] usuarios.json · CAMBIO DE ROL · 34567890V: Gerente → Analista municipal · por 12345678Z
+[20/10/2026 11:05] usuarios.json · BAJA · 78901234X · por 12345678Z
+[19/10/2026 17:22] usuarios.json · ALTA · 56789012B (Gerente) · por 12345678Z</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources />
+ <connections />
+</ui>

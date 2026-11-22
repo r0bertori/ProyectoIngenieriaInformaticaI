@@ -1,1 +1,0 @@
-Arquitectura Base MVC y Estructura en PyCharm
