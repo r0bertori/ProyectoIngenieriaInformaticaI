@@ -1,14 +1,14 @@
 import random
 
 
-# S08: Dispensacion de alcohol en barra
+#S08 Dispensacion de alcohol en barra
 def simular_alcohol():
     # Simulamos una cantidad aleatoria de bebidasque se han servido
     bebidas = random.randint(0, 10)
     return bebidas
 
 
-# S09: Recaudacion de maquinas (tabaco y tragaperras)
+# S09 Tabaco y tragaperras.
 def simular_maquinas():
     # Simulamos el dinero que entra en las maquinas
     tabaco = random.uniform(0.0, 50.0)
@@ -18,7 +18,7 @@ def simular_maquinas():
     return round(total_recaudado, 2)
 
 
-# S07: Consumo electrico
+#S07 Consumo electrico
 def simular_consumo_electrico(estado_bar, num_clientes):
     consumo_base = 2.5
 
