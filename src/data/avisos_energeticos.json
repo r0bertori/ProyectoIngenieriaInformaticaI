@@ -1,0 +1,13 @@
+
+{
+    "avisos": [
+        {
+            "id_aviso": "AV001",
+            "fecha": "2026-11-27",
+            "nivel_restriccion": "alto",
+            "apagar_iluminacion_no_esencial": true,
+            "limitar_climatizacion": true,
+            "temperatura_objetivo": 24
+        }
+    ]
+}
